@@ -1,0 +1,10 @@
+import { defineNuxtPlugin } from '#app'
+import { Vue3Lottie } from 'vue3-lottie'
+
+export default defineNuxtPlugin((nuxtApp) => {
+  nuxtApp.vueApp.component('Vue3Lottie', Vue3Lottie)
+
+  nuxtApp.hook('app:beforeMount', async () => {
+    await generateAccessToken()
+  })
+})

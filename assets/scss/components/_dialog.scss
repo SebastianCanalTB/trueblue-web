@@ -1,0 +1,168 @@
+.general-dialog {
+  background: $color-white !important;
+  border-radius: 16px !important;
+
+  .p-dialog-header {
+    padding: 24px;
+    position: relative;
+
+    .title-dialog {
+      margin: 0;
+      color: $color-1a1a29;
+      font-family: 'heading-pro-treble-bold';
+      font-size: $font-size-24;
+    }
+    .title {
+      font-family: 'heading-pro-treble-bold';
+      font-size: 17px;
+      line-height: 25px;
+      color: $primary-1;
+      margin: 0;
+    }
+    .close-modal {
+      position: absolute !important;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 12px;
+      background: transparent;
+      border: none;
+      padding: 0;
+
+      i {
+        color: $color-575e6b;
+      }
+    }
+  }
+
+  .p-dialog-content {
+    padding: 0 24px;
+    padding-bottom: 24px;
+  }
+
+  .p-dialog-footer {
+    padding: 0;
+  }
+
+  .recipes-dialog {
+    @apply tw-flex tw-relative lg:tw-min-h-[500px] lg:tw-items-center;
+
+    .recipes-dialog-content {
+      @apply tw-w-full;
+      @apply lg:tw-ml-[270px];
+
+      .recipes-dialog-header {
+        @apply tw-flex tw-justify-between tw-pb-3 tw-pr-4;
+
+        .recipe-dialog-title {
+          @apply tw-text-primary tw-font-medium-heavy tw-text-[40px];
+        }
+      }
+
+      .dialog-items-container {
+        @apply lg:tw-max-h-[550px] tw-overflow-y-auto tw-pr-5;
+
+        .dialog-items {
+          @apply tw-flex tw-items-start tw-gap-5 tw-pb-5;
+
+          .strong-texts {
+            @apply tw-font-treble-bold !tw-text-[14px] tw-w-auto tw-text-[#575E6B];
+          }
+        }
+      }
+    }
+
+    .recipe-dialog-image {
+      @apply lg:tw-w-[333px] lg:tw-h-[464px] tw-absolute -tw-left-20 lg:tw-my-auto tw-object-contain;
+    }
+  }
+}
+
+.p-dialog-mask.p-overlay-mask {
+  background: $color-black;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.general-dialog {
+  &.popup-message-dialog {
+    border-radius: 24px;
+    overflow: hidden;
+    padding: 0 !important;
+
+    .p-dialog-header {
+      padding: 0 !important;
+      background: transparent;
+
+      .p-dialog-header-actions {
+        top: 8px;
+        position: absolute;
+        right: 8px;
+        button {
+          background: rgba(255, 255, 255, 0.5) !important;
+
+          &:hover {
+            background: rgba(255, 255, 255, 1) !important;
+          }
+        }
+      }
+    }
+
+    .p-dialog-content {
+      padding: 0;
+    }
+  }
+
+  .popup-header-content {
+    width: 100%;
+    height: 189px;
+
+    .popup-image {
+      width: 100%;
+      height: 189px;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 16px 16px 0 0;
+    }
+  }
+
+  .popup-body {
+    padding: 24px;
+    text-align: center;
+
+    .popup-title {
+      color: #575e6b;
+      font-family: 'Heading Pro Treble Bold', sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      margin: 0 0 12px 0;
+      line-height: 1.4;
+    }
+
+    .popup-message {
+      color: #575e6b;
+      font-size: 14px;
+      line-height: 1.6;
+      margin: 0 0 20px 0;
+      text-align: center;
+    }
+
+    .popup-action-button {
+      width: 100%;
+      background: #003b71;
+      border: none;
+      border-radius: 4px;
+      padding: 12px 24px;
+      font-size: 14px;
+      font-weight: 600;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background: #002a52;
+      }
+    }
+  }
+}

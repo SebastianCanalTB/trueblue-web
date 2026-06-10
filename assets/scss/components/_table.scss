@@ -1,0 +1,202 @@
+.app-container-table {
+  .table-project {
+    background-color: white;
+    cursor: default;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    .p-datatable-header-cell {
+      background: #dadae3;
+      border-bottom: 1px solid transparent !important;
+      height: 42px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    thead {
+      tr th span {
+        color: $color-1a1a29;
+        font-size: $font-size-13;
+        font-family: 'heading-pro-treble-bold';
+        padding: 0.5rem 0;
+      }
+      tr {
+        th:first-child {
+          padding-left: 40px;
+        }
+        th:last-child {
+          padding-right: 40px;
+        }
+      }
+    }
+    .p-datatable-tbody > tr {
+      background: $color-white;
+    }
+    tbody {
+      padding: 10px !important;
+
+      a,
+      p,
+      span {
+        @apply tw-font-treble-book;
+        font-size: $font-size-13;
+        color: #575e6b;
+        &.status {
+          padding-left: 10px;
+          padding-right: 10px;
+          border-radius: 5px;
+          text-align: center;
+          background-color: #c7c2c2;
+          width: max-content;
+          height: 20px;
+
+          &.delivered,
+          &.delivered_to_the_carrier {
+            background-color: rgb(54, 168, 21, 0.1);
+            color: #36a815;
+          }
+
+          &.in_preparation {
+            background-color: rgb(21, 168, 100, 0.1);
+            color: #15a864;
+          }
+
+          &.on_the_way {
+            background-color: rgba(61, 181, 230, 0.1);
+            color: #3db5e6;
+          }
+          &.returned {
+            background-color: rgb(255, 93, 93, 0.1);
+            color: #ff5d5d;
+          }
+          &.created {
+            background-color: rgb(252, 112, 7, 0.1);
+            color: #fc7007;
+          }
+
+          &.cancelled {
+            background-color: rgb(87, 94, 107, 0.1);
+            color: #575e6b;
+          }
+        }
+        &.paymentStatus {
+          text-align: center;
+          width: max-content;
+          &.pending {
+            color: #fc7007;
+          }
+          &.paid {
+            color: #36a815;
+          }
+          &.refunded {
+            color: #15a864;
+          }
+          &.rejected {
+            color: #ff5d5d;
+          }
+        }
+      }
+      tr td {
+        border-bottom: 2px solid #f5f6fa !important;
+      }
+
+      tr:last-child td {
+        border-bottom: none !important;
+      }
+      td:first-child {
+        border-right: 2px solid #f5f6fa !important;
+      }
+
+      tr:hover {
+        background-color: #f7f7f7 !important;
+      }
+      tr {
+        td:first-child {
+          padding-left: 40px;
+          border-radius: 10px 0px 0px 10px;
+        }
+        td:last-child {
+          padding-right: 40px;
+          border-radius: 0px 10px 10px 0px;
+        }
+      }
+    }
+
+    .color-p-black {
+      color: $color-25282b;
+      font-family: 'heading-pro-treble-bold';
+    }
+
+    .rectangular-img {
+      max-width: 140px;
+      max-height: 68px;
+      border-radius: 5px;
+    }
+    .principal-title {
+      @apply tw-font-treble-regular;
+      cursor: pointer;
+      color: $primary-1 !important;
+    }
+    .text-truncated {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    #loading-text {
+      text-align: center;
+    }
+    .p-component-overlay {
+      background-color: rgba(162, 162, 162, 0.5);
+      i {
+        color: var(--primary-color);
+      }
+    }
+  }
+
+  .p-paginator {
+    background-color: transparent;
+    justify-content: flex-end;
+    .p-paginator-element {
+      background-color: white;
+      color: #000000;
+      font-weight: 500;
+    }
+    .p-highlight {
+      background: #ebebeb !important;
+      background-color: #ebebeb !important;
+      color: #000000 !important;
+    }
+  }
+}
+.table-recipe {
+  @apply tw-w-full;
+  .p-datatable-table-container {
+    table {
+      thead {
+        tr {
+          th {
+            @apply tw-text-[#575E6B] tw-font-treble-bold lg:tw-text-sm max-lg:tw-text-xs max-lg:tw-px-2;
+            border-top: 2px solid #555555 !important;
+            border-bottom: 2px solid #555555 !important;
+            border-right: 2px solid #555555 !important;
+            &:first-child {
+              border-left: 2px solid #555555 !important;
+            }
+          }
+        }
+      }
+      tbody {
+        tr {
+          td {
+            @apply tw-text-[#575E6B] tw-font-treble-regular lg:tw-text-sm max-lg:tw-text-xs max-lg:tw-px-2;
+
+            border-bottom: 2px solid #555555 !important;
+            border-right: 2px solid #555555 !important;
+            &:first-child {
+              border-left: 2px solid #555555 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

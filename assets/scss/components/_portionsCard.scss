@@ -1,0 +1,26 @@
+.card-container-portions {
+  @apply tw-flex max-lg:tw-flex-col tw-gap-4 max-lg:tw-w-full;
+  .card {
+    @apply tw-flex lg:tw-flex-col tw-items-center tw-bg-white lg:tw-p-8 lg:tw-px-5 max-lg:tw-px-3 max-lg:tw-py-4 tw-relative lg:tw-min-w-[230px] lg:tw-min-h-[300px] lg:tw-cursor-pointer lg:tw-max-w-[230px];
+    @apply max-lg:tw-w-full max-lg:tw-h-[120px];
+    border: 1px solid $color-white;
+    border-radius: 8px;
+    .imgs-dogs-portion {
+      @apply lg:tw-w-[153px] lg:tw-h-[153px];
+      @apply max-lg:tw-w-[92px] max-lg:tw-h-[92px];
+    }
+    .content {
+      @apply lg:tw-mt-5 max-lg:tw-ml-8;
+      h3 {
+        @apply tw-text-primary tw-font-treble-regular tw-text-[18px] lg:tw-text-center max-lg:tw-text-left;
+      }
+      p {
+        @apply tw-text-primary tw-font-treble-book tw-text-[16px] lg:tw-text-center max-lg:tw-text-left;
+      }
+    }
+    &.selected {
+      @apply tw-border-primary tw-bg-[#3DB5E619];
+      border-color: $secondary;
+    }
+  }
+}

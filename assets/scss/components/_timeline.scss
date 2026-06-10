@@ -1,0 +1,56 @@
+.general-timeline.profile-timeline {
+  @apply tw-mx-auto lg:tw-w-1/2 max-lg:tw-w-11/12  max-lg:tw-left-[30px] tw-relative;
+  .p-timeline-event-separator {
+    .p-timeline-event-marker {
+      @apply tw-w-[10px] tw-h-[10px] tw-top-[-3px];
+      background: #8ba0c9;
+      border: none;
+      &::after {
+        @apply tw-hidden;
+      }
+      &::before {
+        @apply tw-hidden;
+      }
+      &.active {
+        @apply tw-w-4 tw-h-4 tw-top-0;
+        background-color: $primary-1;
+      }
+      &.finished {
+        @apply tw-w-[10px] tw-h-[10px] tw-top-[-3px];
+        background-color: $primary-1;
+      }
+    }
+  }
+
+  .p-timeline-event-connector {
+    background: #8ba0c9;
+    height: 2px;
+    top: -3px;
+    position: relative;
+    &.completed {
+      background: $primary-1;
+      top: -3px;
+    }
+
+    &.half-progress {
+      background: linear-gradient(to right, $primary-1 50%, #8ba0c9 50%);
+      top: 0;
+    }
+  }
+
+  .p-timeline-event-content {
+    @apply tw-text-[13px] tw-font-treble-bold;
+    white-space: nowrap;
+    left: -15px;
+    position: relative;
+    color: #8ba0c9;
+    &.active {
+      color: $primary-1;
+      font-weight: bold;
+    }
+    &.change {
+      @apply tw-font-treble-book;
+      color: #003b71;
+    }
+  }
+}

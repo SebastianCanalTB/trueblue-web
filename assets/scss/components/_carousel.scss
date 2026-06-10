@@ -1,0 +1,73 @@
+.general-carousel {
+  @apply tw-min-h-[200px];
+  .carousel__next,
+  .carousel__prev {
+    @apply max-lg:tw-hidden tw-mx-[10%];
+    background: #ffffff;
+    border: 1px solid #f5f6fa;
+    border-radius: 50%;
+    width: 54px;
+    height: 54px;
+    color: white;
+  }
+  .carousel {
+    @apply tw-pb-10;
+  }
+  .rounded-pagination-carousel {
+    .carousel__pagination-item {
+      .carousel__pagination-button {
+        &::after {
+          width: 13px;
+          height: 6px;
+          border-radius: 3px;
+          background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        &.carousel__pagination-button--active {
+          &::after {
+            background-color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+  .carousel__pagination {
+    @apply tw-flex !tw-mt-10;
+  }
+  .carousel__pagination-button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #93b5d1;
+    border: #93b5d1;
+  }
+  .carousel__pagination-button--active {
+    background-color: #005294;
+    border: #005294;
+  }
+}
+
+.general-carousel.testimonials {
+  .carousel__slide {
+    @apply tw-px-3;
+  }
+}
+.general-carousel.products {
+  .p-carousel-indicator-list {
+    .p-carousel-indicator {
+      &.p-carousel-indicator-active {
+        .p-carousel-indicator-button {
+          background-color: #005294;
+          border: #005294;
+        }
+      }
+      .p-carousel-indicator-button {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #93b5d1;
+        border: #93b5d1;
+      }
+    }
+  }
+}

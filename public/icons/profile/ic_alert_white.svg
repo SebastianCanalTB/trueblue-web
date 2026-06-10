@@ -1,0 +1,10 @@
+<svg id="ic_alert_white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_17703" data-name="Rectángulo 17703" width="16" height="16" fill="#1a1a29"/>
+    </clipPath>
+  </defs>
+  <g id="ic_alert_white-2" data-name="ic_alert_white" clip-path="url(#clip-path)">
+    <path id="alert-triangle" d="M16.693,12.406,11.111,3.149a2.5,2.5,0,0,0-4.206,0L1.324,12.406a2.183,2.183,0,0,0-.036,2.183,2.452,2.452,0,0,0,2.139,1.237H14.59a2.452,2.452,0,0,0,2.14-1.208,2.183,2.183,0,0,0-.036-2.212Zm-7.685.509a.728.728,0,1,1,.728-.728A.728.728,0,0,1,9.008,12.915ZM9.736,10a.728.728,0,0,1-1.455,0V7.093a.728.728,0,1,1,1.455,0Z" transform="translate(-1.012 -1.198)" fill="#1a1a29"/>
+  </g>
+</svg>

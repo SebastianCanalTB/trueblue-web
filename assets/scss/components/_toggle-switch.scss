@@ -1,0 +1,25 @@
+.general-switch {
+  @apply tw-h-[16px];
+  .p-toggleswitch {
+    @apply tw-h-[16px] tw-w-[36px];
+    .p-toggleswitch-handle {
+      @apply tw-h-[14px] tw-w-[14px] tw-top-[57%];
+    }
+
+    &.p-toggleswitch-checked {
+      .p-toggleswitch-slider:before {
+        @apply tw-transform tw-translate-x-[-4px];
+      }
+    }
+  }
+}
+.general-switch.solo-other {
+  .p-toggleswitch.p-toggleswitch-checked .p-toggleswitch-slider {
+    background-color: #3db5e6 !important;
+  }
+}
+.general-switch.solo-tables {
+  .p-toggleswitch.p-toggleswitch-checked .p-toggleswitch-slider {
+    background-color: #3db5e6 !important;
+  }
+}

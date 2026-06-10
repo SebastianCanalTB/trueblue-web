@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="51" height="51.378" viewBox="0 0 51 51.378">
+  <defs>
+    <filter id="Rectángulo_5" x="0" y="0" width="51" height="51.378" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#090a29" flood-opacity="0.082"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Componente_309_5" data-name="Componente 309 – 5" transform="translate(7 7)">
+    <g transform="matrix(1, 0, 0, 1, -7, -7)" filter="url(#Rectángulo_5)">
+      <rect id="Rectángulo_5-2" data-name="Rectángulo 5" width="33" height="33.378" rx="16.5" transform="translate(7 7)" fill="rgba(0,59,113,0.2)"/>
+    </g>
+    <g id="ic_user_fill" transform="translate(8.875 8.995)">
+      <path id="person_24dp_5F6368_FILL1_wght300_GRAD-25_opsz24" d="M194.9-756.336a3.416,3.416,0,0,1-2.508-1.033,3.416,3.416,0,0,1-1.033-2.508,3.415,3.415,0,0,1,1.033-2.508,3.416,3.416,0,0,1,2.508-1.033,3.415,3.415,0,0,1,2.508,1.033,3.415,3.415,0,0,1,1.033,2.508,3.416,3.416,0,0,1-1.033,2.508A3.416,3.416,0,0,1,194.9-756.336Zm-7.625,6.163v-.714a2.5,2.5,0,0,1,.4-1.369,2.662,2.662,0,0,1,1.086-.965,15.521,15.521,0,0,1,3.062-1.111,12.933,12.933,0,0,1,3.079-.375,12.948,12.948,0,0,1,3.08.375,15.452,15.452,0,0,1,3.062,1.111,2.658,2.658,0,0,1,1.085.965,2.5,2.5,0,0,1,.4,1.369v.714a1.425,1.425,0,0,1-.431,1.047,1.425,1.425,0,0,1-1.047.431h-12.3a1.425,1.425,0,0,1-1.047-.431A1.425,1.425,0,0,1,187.27-750.174Z" transform="translate(-187.27 763.42)" fill="#003b71"/>
+    </g>
+  </g>
+</svg>

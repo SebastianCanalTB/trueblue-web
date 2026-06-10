@@ -1,0 +1,83 @@
+.recipe-card {
+  @apply tw-transition-shadow tw-duration-300 tw-bg-[#F5F6FA] lg:tw-max-w-[400px];
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  @apply tw-w-[100%] tw-rounded-2xl;
+
+  &:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  .p-card-header {
+    @apply tw-relative tw-w-full tw-px-0;
+
+    .recipe-image {
+      @apply lg:tw-w-[262px] lg:tw-h-[255px] max-lg:tw-w-[200px] max-lg:tw-h-[235px];
+      @apply tw-mb-4 tw-transition-all tw-duration-300 tw-absolute tw-top-0 tw-left-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2;
+      object-fit: cover;
+    }
+  }
+
+  .p-card-body {
+    @apply tw-flex tw-flex-col tw-items-center tw-justify-between tw-h-full tw-mt-[154px] tw-relative tw-p-0;
+
+    .p-card-content {
+      @apply tw-px-5;
+
+      .recipe-title {
+        @apply tw-text-[40px] tw-font-medium-heavy tw-text-primary tw-mb-4 tw-text-center;
+      }
+
+      .recipe-text {
+        @apply tw-font-treble-book tw-text-[14px] tw-text-[#575E6B];
+      }
+
+      .recipe-strong {
+        @apply tw-font-treble-bold tw-text-[14px] tw-text-[#575E6B];
+      }
+    }
+
+    .p-card-footer {
+      @apply tw-w-full tw-px-0;
+
+      .recipe-button {
+        @apply tw-bg-primary tw-text-white tw-w-full tw-font-semibold tw-transition-all tw-duration-300;
+        border-radius: 0px 0px 10px 10px !important;
+        border: none !important;
+        &:hover {
+          @apply tw-bg-opacity-90 tw-shadow-lg;
+          transform: translateY(-2px);
+        }
+
+        &:active {
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+}
+.account-card {
+  @apply tw-rounded-xl;
+  background-color: #8ba0c91a !important;
+  box-shadow: none !important;
+  width: 100%;
+  .p-card-body {
+    @apply tw-p-3 tw-relative;
+    p {
+      color: #003b71;
+      font-family: 'heading-pro-treble-book';
+      font-size: 14px;
+    }
+    p:nth-child(1) {
+      font-family: 'heading-pro-treble-bold';
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: 2.3rem;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: white;
+    }
+  }
+}

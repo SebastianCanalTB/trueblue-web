@@ -1,0 +1,10 @@
+<svg id="Componente_375_1" data-name="Componente 375 – 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_18287" data-name="Rectángulo 18287" width="32" height="32" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_64289" data-name="Grupo 64289" clip-path="url(#clip-path)">
+    <path id="Exclusión_3" data-name="Exclusión 3" d="M16,32a16.154,16.154,0,0,1-3.225-.325A16,16,0,0,1,.325,19.225a16.174,16.174,0,0,1,0-6.449A16,16,0,0,1,12.775.325a16.176,16.176,0,0,1,6.449,0,15.918,15.918,0,0,1,5.721,2.408,16,16,0,0,1-5.721,28.942A16.143,16.143,0,0,1,16,32ZM14.978,18.869h0l4.911,6.649H26.16L18.152,14.556,24.959,6.5H21.843l-5.134,6.077L12.269,6.5H5.84l7.682,10.4L6.241,25.519H9.359l5.619-6.649Zm7.5,4.719H20.75L9.479,8.33h1.853L22.476,23.588Z" transform="translate(0 0)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+  </g>
+</svg>

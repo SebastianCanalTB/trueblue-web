@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'heading-pro-treble-regular';
+  src: url('/fonts/heading-pro-treble-regular.ttf');
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'heading-pro-treble-heavy';
+  src: url('/fonts/heading-pro-treble-heavy.ttf');
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'heading-pro-treble-extrabold';
+  src: url('/fonts/heading-pro-treble-extrabold.ttf');
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'heading-pro-treble-book';
+  src: url('/fonts/heading-pro-treble-book.ttf');
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'heading-pro-treble-bold';
+  src: url('/fonts/heading-pro-treble-bold.ttf');
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'heading-pro-medium-heavy';
+  src: url('/fonts/heading-pro-medium-heavy.ttf');
+  font-display: swap;
+  font-style: normal;
+}
+
+.heading-pro-treble-regular {
+  font-family: 'heading-pro-treble-regular' !important;
+}
+
+.heading-pro-treble-heavy {
+  font-family: 'heading-pro-treble-heavy' !important;
+}
+
+.heading-pro-treble-extrabold {
+  font-family: 'heading-pro-treble-extrabold' !important;
+}
+
+.heading-pro-treble-book {
+  font-family: 'heading-pro-treble-book' !important;
+}
+
+.heading-pro-treble-bold {
+  font-family: 'heading-pro-treble-bold' !important;
+}
+
+.heading-pro-treble-book {
+  font-family: 'heading-pro-medium-heavy' !important;
+}

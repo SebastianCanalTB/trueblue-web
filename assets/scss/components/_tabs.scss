@@ -1,0 +1,88 @@
+.general-tabs {
+  &.plan-tabs {
+    .p-tabs.p-component {
+      .p-tablist {
+        background-color: transparent;
+        .p-tablist-content {
+          .p-tablist-tab-list {
+            border-bottom: 2px solid #e0e5f0;
+            .p-tab {
+              @apply tw-text-[#575E6B] tw-text-[18px] tw-font-treble-book;
+              &.p-tab-active {
+                @apply tw-text-primary tw-font-treble-bold;
+                &::after {
+                  transform: scaleX(1) translateX(-50%);
+                  transform-origin: bottom left;
+                }
+              }
+              &::after {
+                content: '';
+                position: absolute;
+                width: 40%;
+                transform: scaleX(0) translateX(-50%);
+                height: 4px;
+                bottom: 0;
+                left: 50%;
+                z-index: 40;
+                transform-origin: bottom right;
+                transition: transform 0.25s ease-out;
+                background-color: $primary-1;
+              }
+              &:hover::after {
+                transform: scaleX(1) translateX(-50%);
+                transform-origin: bottom left;
+              }
+            }
+            .p-tablist-active-bar {
+              @apply tw-bg-primary2;
+            }
+          }
+        }
+      }
+      .p-tabpanels {
+        background-color: transparent;
+      }
+    }
+  }
+  &.order-tabs {
+    .p-tablist {
+      @apply tw-bg-transparent;
+    }
+    .p-tablist-content {
+      @apply tw-relative;
+      .p-tablist-tab-list {
+        border-bottom: 2px solid #e0e5f0;
+        .p-tab {
+          @apply tw-text-[#575E6B] tw-text-[18px] tw-font-treble-book;
+          &.p-tab-active {
+            @apply tw-text-primary tw-font-treble-bold;
+            &::after {
+              transform: scaleX(1) translateX(-50%);
+              transform-origin: bottom left;
+            }
+          }
+          &::after {
+            content: '';
+            position: absolute;
+            width: 40%;
+            transform: scaleX(0) translateX(-50%);
+            height: 4px;
+            bottom: 0;
+            left: 50%;
+            z-index: 40;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+            background-color: $primary-1;
+          }
+          &:hover::after {
+            transform: scaleX(1) translateX(-50%);
+            transform-origin: bottom left;
+          }
+        }
+      }
+    }
+    .p-tabpanels {
+      @apply tw-bg-transparent max-lg:tw-px-0;
+    }
+  }
+}

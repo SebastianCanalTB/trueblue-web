@@ -1,0 +1,81 @@
+.general-date {
+  &.filter {
+    input {
+      background: $color-white;
+      border-radius: 6px;
+      height: 40px;
+      border: 1px solid $color-black-3;
+      width: 100%;
+      &::placeholder {
+        font-size: $font-size-14;
+        color: $text-disabled;
+        font-family: 'heading-pro-treble-book';
+      }
+      &:hover {
+        border-color: $color-black-3;
+      }
+      &:enabled:focus {
+        border-color: $color-black-3;
+      }
+    }
+  }
+  &.form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    label {
+      font-size: $font-size-12;
+      line-height: 24px;
+      letter-spacing: 0;
+      font-family: 'heading-pro-treble-bold';
+      color: $color-1a1a29;
+    }
+    input {
+      background-color: $color-white;
+      font-family: 'heading-pro-treble-book';
+      padding: 12px 15px;
+      color: $color-575e6b;
+      font-size: $font-size-14;
+      border-radius: 4px;
+      border: none;
+      box-shadow: none;
+      &::placeholder {
+        color: $text-disabled;
+      }
+      &:focus {
+        border: 1px solid $secondary !important;
+      }
+    }
+    &.disabled {
+      input {
+        background-color: $color-ededf1;
+      }
+    }
+    &.summary {
+      input {
+        background-color: $color-f5f6fa;
+      }
+    }
+  }
+}
+
+.p-datepicker-title {
+  button {
+    font-family: 'heading-pro-treble-regular' !important;
+  }
+}
+.p-datepicker-month-selected,
+.p-datepicker-year-selected {
+  background: $secondary;
+}
+.p-datepicker-day-view {
+  tbody tr td {
+    .p-datepicker-day-selected {
+      background: $secondary !important;
+    }
+    .p-datepicker-day-selected-range {
+      background-color: rgba($secondary, 0.2);
+      color: $secondary;
+    }
+  }
+}

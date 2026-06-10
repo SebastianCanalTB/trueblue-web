@@ -1,0 +1,232 @@
+.general-dropdown {
+  display: flex;
+  flex-direction: column;
+
+  .p-select {
+    width: 100%;
+  }
+}
+.general-dropdown.solo-create {
+  &.normal-labels {
+    @apply tw-min-h-[84px];
+    .p-select {
+      height: 42px;
+    }
+    label {
+      margin-bottom: 5px;
+      font-family: 'heading-pro-treble-bold';
+      font-size: 14px;
+      color: #1a1a29;
+      text-align: left;
+    }
+    &.checkout {
+      .p-select {
+        background-color: $color-white;
+        border: 1px solid #dee2e5;
+        .p-select-label {
+          &.p-placeholder {
+            color: #8ba0c9;
+            font-size: 16px;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  label {
+    text-align: center;
+    margin-bottom: 7px;
+    font-size: 18px;
+    font-family: 'heading-pro-treble-regular';
+    color: #1a1a29;
+  }
+
+  .p-select {
+    @apply max-lg:tw-max-h-[200px];
+    background-color: #ffffff;
+    width: 100% !important;
+    border-radius: 4px;
+    border: none;
+    height: 36px;
+    &::placeholder {
+      color: #8ba0c9;
+      font-size: 16px;
+      opacity: 1;
+    }
+
+    .p-select-label {
+      padding: 8px 15px;
+      &.p-placeholder {
+        font-size: $font-size-16;
+        color: #8ba0c9;
+        opacity: 1;
+      }
+    }
+  }
+  &.not-borders {
+    .p-select .p-select-label {
+      color: #3db5e6 !important;
+    }
+    .p-select {
+      border-radius: 4px 0px 0px 4px !important;
+    }
+  }
+  &.checkout {
+    .p-select {
+      background-color: #f5f6fa;
+    }
+
+    &::placeholder {
+      font-size: 14px;
+      opacity: 1;
+      color: #575e6b;
+    }
+    .p-select-label {
+      padding: 8px 15px;
+      color: #575e6b;
+
+      &.p-placeholder {
+        color: #575e6b;
+
+        font-size: $font-size-14;
+        opacity: 1;
+      }
+    }
+  }
+}
+.general-dropdown {
+  &.text-left {
+    label {
+      text-align: left;
+      margin-bottom: 7px;
+      font-size: 12px;
+      font-family: 'heading-pro-treble-bold';
+      color: #1a1a29;
+    }
+    .p-select {
+      background-color: #f5f6fa;
+      border: none;
+    }
+
+    &::placeholder {
+      font-size: 14px;
+      opacity: 1;
+      color: #575e6b;
+    }
+    .p-select-label {
+      padding: 8px 15px;
+      color: #575e6b;
+
+      &.p-placeholder {
+        color: #8ba0c9;
+        font-size: 16px;
+        opacity: 1;
+      }
+    }
+  }
+}
+.general-dropdown.solo-checkout {
+  height: 90px;
+
+  label {
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-family: 'heading-pro-treble-bold';
+    color: #1a1a29;
+  }
+
+  .p-select {
+    background-color: #f5f6fa;
+    width: 100% !important;
+    border-radius: 2px 0px 0px 2px;
+    border: none;
+    &::placeholder {
+      color: #8ba0c9;
+      font-size: 16px;
+      opacity: 1;
+    }
+    .p-select-option {
+      background: transparent !important;
+    }
+    .p-select-label {
+      padding: 12px 15px;
+      .p-placeholder {
+        font-size: $font-size-16;
+        color: #8ba0c9;
+        opacity: 1;
+      }
+    }
+  }
+  &.not-borders {
+    .p-select .p-select-label {
+      color: #3db5e6 !important;
+    }
+    .p-select {
+      border-radius: 4px 0px 0px 4px !important;
+    }
+  }
+}
+
+.general-dropwdown.filter {
+  .p-select {
+    border: 1px solid $color-black-3;
+    background: $color-white;
+    border-radius: 4px;
+    .p-select-label {
+      padding: 10px 15px;
+      &::placeholder {
+        color: #8ba0c9;
+        font-size: 16px;
+        opacity: 1;
+      }
+    }
+
+    &:not(.p-disabled).p-focus {
+      border-color: $color-black-3;
+    }
+  }
+}
+.general-dropwdown.rows {
+  .p-select {
+    border: 1px solid $color-black-3;
+    background: $color-white;
+    border-radius: 8px;
+    height: 36px;
+    width: 90px;
+    .p-select-label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &::placeholder {
+        color: #8ba0c9;
+        font-size: 16px;
+        opacity: 1;
+      }
+    }
+
+    &:not(.p-disabled).p-focus {
+      border-color: $color-black-3;
+    }
+  }
+}
+.p-select-list-container {
+  .p-select-list:has(.selected-option) {
+    li:has(.not-option) {
+      padding: 0;
+    }
+    li {
+      &.p-select-option-selected {
+        background-color: $secondary-4;
+        span {
+          color: #334155 !important;
+        }
+      }
+    }
+  }
+}
+.p-select-option.p-select-option-selected {
+  background: $secondary-4 !important;
+  span {
+    color: $primary-1 !important;
+  }
+}

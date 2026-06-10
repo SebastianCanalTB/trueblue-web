@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="Grupo_65588" data-name="Grupo 65588" transform="translate(-667 -519)">
+    <circle id="Elipse_11769" data-name="Elipse 11769" cx="16" cy="16" r="16" transform="translate(667 519)" fill="#fff"/>
+    <g id="ic_arrow_breadcrumb" transform="translate(687.35 529.85)">
+      <g id="small_arrow" transform="translate(0 10.301) rotate(-90)">
+        <path id="Vector_7_Stroke_" data-name="Vector 7 (Stroke)" d="M12.663,2.337a1.15,1.15,0,0,1,0,1.626l-4,4a1.15,1.15,0,0,1-1.626,0l-4-4A1.15,1.15,0,0,1,4.663,2.337L7.85,5.524l3.187-3.187A1.15,1.15,0,0,1,12.663,2.337Z" transform="translate(-2.699 -2)" fill="#868892" fill-rule="evenodd"/>
+      </g>
+    </g>
+    <g id="ic_arrow_breadcrumb-2" data-name="ic_arrow_breadcrumb" transform="translate(678.65 540.15) rotate(180)">
+      <g id="small_arrow-2" data-name="small_arrow" transform="translate(0 10.301) rotate(-90)">
+        <path id="Vector_7_Stroke_2" data-name="Vector 7 (Stroke)" d="M12.663,2.337a1.15,1.15,0,0,1,0,1.626l-4,4a1.15,1.15,0,0,1-1.626,0l-4-4A1.15,1.15,0,0,1,4.663,2.337L7.85,5.524l3.187-3.187A1.15,1.15,0,0,1,12.663,2.337Z" transform="translate(-2.699 -2)" fill="#868892" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>

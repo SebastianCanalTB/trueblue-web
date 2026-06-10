@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15.013" height="15" viewBox="0 0 15.013 15">
+  <g id="arrowhead-left" transform="translate(0)">
+    <g id="arrowhead-left-2" data-name="arrowhead-left" transform="translate(15.013) rotate(90)">
+      <path id="Trazado_146684" data-name="Trazado 146684" d="M11.64,5.247A.956.956,0,0,0,10.908,5a.982.982,0,0,0-.678.383l-5,6.429a1.131,1.131,0,0,0,0,1.361l4.83,6.429a.976.976,0,0,0,.78.4,1,1,0,0,0,.905-.609,1.134,1.134,0,0,0-.125-1.138L7.29,12.5l4.48-5.754a1.125,1.125,0,0,0-.13-1.5Z" transform="translate(-5.003 -4.989)" fill="#2b7ee2"/>
+      <path id="Trazado_146685" data-name="Trazado 146685" d="M14.29,12.5l4.48-5.754a1.126,1.126,0,0,0-.13-1.511.956.956,0,0,0-1.41.139l-5,6.429a1.131,1.131,0,0,0,0,1.361L17.06,19.6a.976.976,0,0,0,.78.4,1,1,0,0,0,.905-.609,1.134,1.134,0,0,0-.125-1.138Z" transform="translate(-4.001 -4.989)" fill="#2b7ee2"/>
+    </g>
+  </g>
+</svg>

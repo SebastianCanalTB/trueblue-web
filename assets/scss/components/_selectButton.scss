@@ -1,0 +1,88 @@
+.general-selectButton {
+  position: relative;
+  .p-selectbutton.p-component {
+    display: flex !important;
+    gap: 12px !important;
+    button.p-togglebutton.p-component {
+      padding: 10px 24px;
+      font-family: 'heading-pro-treble-book';
+      background-color: $color-white;
+      border: 1px solid #ededf1;
+      font-size: $font-size-14;
+      color: $color-575e6b;
+      border-radius: 4px;
+      font-size: 16px;
+      height: 38px;
+      .p-togglebutton-content {
+        width: 168px;
+        box-shadow: none;
+        background: transparent !important;
+        padding: 2px 0 0 0 !important;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &:focus {
+        outline: 1px solid rgba($secondary, 0.5);
+      }
+    }
+    &.short {
+      button.p-togglebutton.p-component {
+        padding: 10px 40px !important;
+      }
+    }
+    button.p-togglebutton.p-component.p-togglebutton-checked {
+      font-family: 'heading-pro-treble-bold';
+      font-size: 16px;
+      background-color: #3db5e633;
+      border: 1px solid $secondary;
+      color: $color-25282b;
+      outline: none;
+      &::before {
+        background: none;
+        box-shadow: none;
+      }
+    }
+  }
+  &.form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    &.normal-label {
+      label {
+        margin-bottom: 5px;
+        font-family: 'heading-pro-treble-bold';
+        font-size: 14px;
+        color: #1a1a29;
+        text-align: left;
+      }
+    }
+    label {
+      text-align: center;
+      font-size: 18px;
+      line-height: 17px;
+      letter-spacing: 0;
+      font-family: 'heading-pro-treble-regular';
+      color: $color-1a1a29;
+    }
+  }
+  .disccount-option {
+    @apply lg:tw-top-[50px] max-lg:tw-top-[65px];
+    position: absolute;
+    background-color: #36a815;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    left: 15px;
+    transform: rotate(-33deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      color: white;
+      font-size: 11px;
+      font-family: 'heading-pro-treble-bold';
+    }
+  }
+}

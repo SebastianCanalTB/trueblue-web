@@ -1,0 +1,20 @@
+.home-card {
+  @apply lg:tw-p-5 lg:tw-pr-[12px] xl:tw-pr-5 tw-bg-white tw-max-h-[98%] tw-max-w-[99%] tw-flex tw-flex-col tw-gap-5 tw-z-10;
+  @apply max-lg:tw-min-h-[150px] max-lg:tw-gap-1 max-lg:tw-pl-2 max-lg:tw-py-5 max-lg:tw-pr-1;
+  .header {
+    @apply tw-flex tw-items-center tw-gap-5;
+    h1 {
+      color: $primary-1;
+      font-family: 'heading-pro-treble-bold';
+      font-size: 18px;
+      @apply max-lg:tw-text-[16px];
+    }
+    img {
+      @apply max-xl:tw-w-[50px] max-xl:tw-h-[40px];
+    }
+  }
+  p {
+    @apply lg:tw-text-[13px] max-lg:tw-text-[11px]  max-lg:tw-mt-3;
+    color: #575e6b;
+  }
+}
