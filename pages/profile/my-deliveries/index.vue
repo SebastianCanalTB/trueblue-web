@@ -1,9 +1,3 @@
-<script setup lang="ts">
-const secondSection = useState<boolean>('profile-second-section')
-</script>
-
 <template>
-  <div>
-    <ProfileMyDeliveries v-model="secondSection" />
-  </div>
+  <ProfileV3OrdersOrderHistory />
 </template>

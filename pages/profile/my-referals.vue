@@ -1,9 +1,3 @@
-<script setup lang="ts">
-const secondSection = useState<boolean>('profile-second-section')
-</script>
-
 <template>
-  <div>
-    <ProfileMyReferals v-model="secondSection" />
-  </div>
+  <ProfileV3Referrals />
 </template>

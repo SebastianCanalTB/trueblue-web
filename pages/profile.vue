@@ -6,6 +6,23 @@ const { getLoginUser: user } = storeToRefs(onboardingStore)
 const secondSection = useState<boolean>('profile-second-section', () => false)
 const route = useRoute()
 
+/**
+ * Mi cuenta v3: clientes (type 'user' o 'both') ven el menú nuevo arriba
+ * (computador) / abajo (celular). Las veterinarias (type 'vet') siguen con el
+ * menú lateral de siempre.
+ */
+const userType = computed(() => useSearchItemJson('type', user.value))
+const isV3 = computed(() => userType.value !== 'vet')
+const logoutDialog = ref(false)
+const doLogout = async () => {
+  useLoading(true)
+  const result = await onboardingStore.logout()
+  if (result.status && result.code === 100) {
+    window.location.href = localePath({ name: 'index' })
+  }
+  useLoading(false)
+}
+
 const checkDetailView = () => {
   if (route.query.page === 'my-plan') {
     navigateTo(localePath('/profile/my-plan'))
@@ -34,7 +51,27 @@ watch(
 </script>
 
 <template>
+  <div v-if="isV3" class="ma-shell">
+    <ProfileV3CommonNav
+      :show-recommendeds="userType === 'both'"
+      @logout="logoutDialog = true"
+    />
+    <div class="ma-shell-mobile-top">
+      <button class="ma-link is-muted" @click="logoutDialog = true">
+        Cerrar sesión
+      </button>
+    </div>
+    <NuxtPage />
+    <ProfileV3CommonBlueLauncher />
+    <LayoutsLoginLogout
+      :dialog="logoutDialog"
+      @logout="doLogout"
+      @closeModal="logoutDialog = false"
+    />
+  </div>
+
   <div
+    v-else
     class="profile-page tw-w-full"
     :class="{
       'lg:!tw-h-[45vh] lg:!tw-min-h-[300px]':
@@ -146,6 +183,21 @@ watch(
 </template>
 
 <style scoped lang="scss">
+.ma-shell {
+  width: 100%;
+  min-height: 100vh;
+  background: #f5f6fa;
+  // El header del sitio es fijo (58 px; 88 px si se ve la barra de cupón).
+  padding-top: 40px;
+}
+.ma-shell-mobile-top {
+  display: none;
+  @media (max-width: 1024px) {
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px 16px 0;
+  }
+}
 .profile-page {
   @apply tw-h-[100%] tw-min-h-[100vh] tw-w-screen tw-flex max-lg:tw-px-4 tw-bg-[#F5F6FA];
 

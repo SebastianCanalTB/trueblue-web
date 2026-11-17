@@ -1,0 +1,396 @@
+// Mi cuenta v3 — estilos compartidos (design system True Blue)
+// Colores: midnight #003b71 · blizzard #96d9e9 · picton #3db5e6 · viking #64d0e4
+// blizzard-50 #e8f7fa · error #b42318. Radios 12 / 20 / 28.
+// No usar naranja/amarillo para avisos (reservados para perro/snacks).
+
+$ma-midnight: #003b71;
+$ma-blizzard: #96d9e9;
+$ma-picton: #3db5e6;
+$ma-viking: #64d0e4;
+$ma-blizzard-50: #e8f7fa;
+$ma-error: #b42318;
+$ma-text: #25282b;
+$ma-muted: #575e6b;
+$ma-line: #dfe5ee;
+$ma-bg: #f5f6fa;
+
+.ma-page {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 16px 120px;
+  box-sizing: border-box;
+  color: $ma-text;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  h1 {
+    font-family: 'heading-pro-treble-bold';
+    font-size: 32px;
+    color: $ma-midnight;
+    margin: 0;
+  }
+  h2 {
+    font-family: 'heading-pro-treble-bold';
+    font-size: 20px;
+    color: $ma-midnight;
+    margin: 0;
+  }
+  h3 {
+    font-family: 'heading-pro-treble-bold';
+    font-size: 16px;
+    color: $ma-midnight;
+    margin: 0;
+  }
+}
+
+// Títulos dentro de los pop ups (se montan fuera de .ma-page con Teleport)
+.ma-modal {
+  color: $ma-text;
+  h2 {
+    font-family: 'heading-pro-treble-bold';
+    font-size: 20px;
+    color: $ma-midnight;
+    margin: 0;
+  }
+  h3 {
+    font-family: 'heading-pro-treble-bold';
+    font-size: 16px;
+    color: $ma-midnight;
+    margin: 0;
+  }
+}
+
+.ma-sub {
+  font-size: 14px;
+  color: $ma-muted;
+  line-height: 1.45;
+}
+.ma-small {
+  font-size: 13px;
+  color: $ma-muted;
+}
+.ma-label {
+  font-family: 'heading-pro-treble-bold';
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $ma-midnight;
+}
+.ma-error-text {
+  color: $ma-error;
+  font-size: 13px;
+}
+
+.ma-box {
+  background: #fff;
+  border: 1px solid $ma-line;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  &.is-soft {
+    background: $ma-blizzard-50;
+    border-color: transparent;
+  }
+  &.is-error {
+    border-color: $ma-error;
+  }
+}
+
+.ma-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.ma-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// ---------- botones ----------
+.ma-btn {
+  font-family: 'heading-pro-treble-bold';
+  font-size: 15px;
+  min-height: 44px;
+  padding: 0 22px;
+  border-radius: 999px;
+  border: 1.5px solid $ma-midnight;
+  background: $ma-midnight;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  &:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+  }
+  &.is-outline {
+    background: #fff;
+    color: $ma-midnight;
+  }
+  &.is-block {
+    width: 100%;
+  }
+}
+.ma-link {
+  font-family: 'heading-pro-treble-bold';
+  background: none;
+  border: none;
+  padding: 0;
+  min-height: 32px;
+  color: $ma-midnight;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: left;
+
+  &.is-muted {
+    color: $ma-muted;
+    font-family: 'heading-pro-treble-book';
+  }
+}
+
+// Fila de opción (Ajustar plan, Editar pedido, causales)
+.ma-option {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid $ma-line;
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+  color: $ma-text;
+
+  & + & {
+    margin-top: 8px;
+  }
+  &:hover {
+    border-color: $ma-midnight;
+  }
+  &.is-on {
+    border-color: $ma-midnight;
+    background: $ma-blizzard-50;
+  }
+  .ma-option-icon {
+    flex: 0 0 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: $ma-blizzard-50;
+    color: $ma-midnight;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ma-option-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    b {
+      font-family: 'heading-pro-treble-bold';
+      font-size: 15px;
+    }
+  }
+}
+
+.ma-pill {
+  font: inherit;
+  font-size: 14px;
+  padding: 8px 16px;
+  min-height: 40px;
+  border-radius: 999px;
+  border: 1.5px solid $ma-line;
+  background: #fff;
+  color: $ma-midnight;
+  cursor: pointer;
+  &.is-on {
+    background: $ma-midnight;
+    border-color: $ma-midnight;
+    color: #fff;
+  }
+}
+
+// ---------- contador + / − ----------
+.ma-counter {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1.5px solid $ma-midnight;
+    background: #fff;
+    color: $ma-midnight;
+    font-size: 20px;
+    cursor: pointer;
+    &:disabled {
+      opacity: 0.35;
+      cursor: not-allowed;
+    }
+  }
+  span {
+    min-width: 28px;
+    text-align: center;
+    font-family: 'heading-pro-treble-bold';
+    font-size: 16px;
+  }
+}
+
+// ---------- formularios ----------
+.ma-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  label {
+    font-family: 'heading-pro-treble-bold';
+    font-size: 13px;
+    color: $ma-text;
+  }
+  input,
+  select,
+  textarea {
+    font: inherit;
+    font-size: 15px;
+    min-height: 44px;
+    padding: 10px 12px;
+    border: 1px solid #c9d1de;
+    border-radius: 12px;
+    background: #fff;
+    color: $ma-text;
+    box-sizing: border-box;
+    width: 100%;
+    &:disabled,
+    &[readonly] {
+      background: $ma-bg;
+      color: $ma-muted;
+    }
+  }
+  textarea {
+    min-height: 88px;
+    resize: vertical;
+  }
+}
+
+// ---------- modal ----------
+.ma-modal-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0, 27, 52, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+.ma-modal {
+  background: #fff;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 640px;
+  max-height: calc(100vh - 32px);
+  overflow-y: auto;
+  padding: 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  @media (max-width: 640px) {
+    padding: 20px 16px;
+    border-radius: 20px 20px 0 0;
+    align-self: flex-end;
+    max-height: 92vh;
+  }
+}
+.ma-modal-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.ma-modal-foot {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding-top: 12px;
+  border-top: 1px solid $ma-line;
+}
+
+// ---------- tooltip "este pedido" ----------
+.ma-tip {
+  position: relative;
+  display: inline-block;
+  .ma-tip-trigger {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: underline dotted;
+    text-underline-offset: 4px;
+  }
+  .ma-tip-box {
+    position: absolute;
+    z-index: 20;
+    top: calc(100% + 8px);
+    left: 0;
+    width: 280px;
+    background: $ma-midnight;
+    color: #fff;
+    font-family: 'heading-pro-treble-book';
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 12px 14px;
+    border-radius: 12px;
+    .ma-link {
+      color: $ma-blizzard;
+      font-size: 14px;
+      min-height: 0;
+    }
+  }
+}
+
+// ---------- estado ----------
+.ma-tag {
+  font-family: 'heading-pro-treble-bold';
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $ma-midnight;
+  &.is-error {
+    color: $ma-error;
+  }
+}
+
+.ma-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 96px;
+  transform: translateX(-50%);
+  background: $ma-midnight;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 12px;
+  z-index: 1100;
+  max-width: calc(100vw - 32px);
+  font-size: 14px;
+}
